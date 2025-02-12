@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackupModuleTest", "BackupModuleTest\BackupModuleTest.csproj", "{A22E015D-0840-42E5-AE74-36B7C3F79080}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackupModuleSystem", "BackupModuleSystem\BackupModuleSystem.csproj", "{F98C8CA4-3561-4DD3-AD6F-7E4E86362479}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A22E015D-0840-42E5-AE74-36B7C3F79080}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A22E015D-0840-42E5-AE74-36B7C3F79080}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A22E015D-0840-42E5-AE74-36B7C3F79080}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A22E015D-0840-42E5-AE74-36B7C3F79080}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F98C8CA4-3561-4DD3-AD6F-7E4E86362479}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F98C8CA4-3561-4DD3-AD6F-7E4E86362479}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F98C8CA4-3561-4DD3-AD6F-7E4E86362479}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F98C8CA4-3561-4DD3-AD6F-7E4E86362479}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
