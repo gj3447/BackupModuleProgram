@@ -11,22 +11,19 @@ namespace BackupModuleSystem
         #region field
         public string m_read_path { get; set; }
         public string m_write_path { get; set; }
-        public List<BackupTo> m_backup_to_list { get; set; }
-        public List<DateTime> m_schedule_update_list { get; set; }
+        public List<BackupTo> m_backup_to_list { get; set; } = new List<BackupTo>();
+        public List<DateTime> m_schedule_update_list { get; set; } = new List<DateTime>();
 
-        public int m_week_backup_to_size { get; set; }
-        public TYPE m_type { get; set; }
-
-        public bool m_run { get; set; }
-        public bool m_sun { get; set; }
-        public bool m_mon { get; set; }
-        public bool m_tue { get; set; }
-        public bool m_wed { get; set; }
-        public bool m_thu { get; set; }
-        public bool m_fri { get; set; }
-        public bool m_sat { get; set; }
-        public DateTime m_last_week_update_time { get; set; }
-        public TimeOnly m_week_update_time { get; set; }
+        public bool m_run { get; set; } = false;
+        public bool m_sun { get; set; } = false;
+        public bool m_mon { get; set; } = false;
+        public bool m_tue { get; set; } = false;
+        public bool m_wed { get; set; } = false;
+        public bool m_thu { get; set; } = false;
+        public bool m_fri { get; set; } = false;
+        public bool m_sat { get; set; } = false;
+        public DateTime m_last_week_update_time { get; set; } = DateTime.MinValue;
+        public TimeOnly m_week_update_time { get; set; } = TimeOnly.MinValue;
         #endregion
 
         public override string ToString()
@@ -188,26 +185,6 @@ namespace BackupModuleSystem
         {
             m_read_path = read_path;
             m_write_path = write_path;
-
-            m_backup_to_list = new List<BackupTo>();
-            m_schedule_update_list = new List<DateTime>();
-            m_sun = false;
-            m_mon = false;
-            m_tue = false;
-            m_wed = false;
-
-            m_thu = false;
-            m_fri = false;
-            m_sat = false;
-            m_week_update_time = TimeOnly.MinValue;
-            m_last_week_update_time = DateTime.MinValue;
-            if (File.Exists(read_path))
-                m_type = BackupFrom.TYPE.FILE;
-            else
-            {
-                Directory.CreateDirectory(read_path);
-                m_type = BackupFrom.TYPE.DIRECTORY;
-            }
         }
         public void h_json_ignore_update()
         {

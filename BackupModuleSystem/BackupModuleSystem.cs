@@ -15,15 +15,12 @@ namespace BackupModuleSystem
 {
     public class BackupModuleSystem
     {
-        public List<BackupFrom> m_backup_from_list { get; set; }
-        
-        public BackupFrom m_backup_from_selected { get; set; }
-        public BackupTo m_backup_to_selected { get; set; }
+        public List<BackupFrom> m_backup_from_list { get; set; } = new List<BackupFrom>();
+
+        public BackupFrom m_backup_from_selected { get; set; } = null;
+        public BackupTo m_backup_to_selected { get; set; } = null;
         public BackupModuleSystem()
         {
-            m_backup_from_list = new List<BackupFrom>();
-            m_backup_from_selected = null;
-            m_backup_to_selected = null;
         }
         public void h_json_ignore_update()
         {
@@ -98,7 +95,7 @@ namespace BackupModuleSystem
                     DefaultIgnoreCondition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
                 };
                 message = "json2system complete";
-                return JsonSerializer.Deserialize<BackupModuleSystem>(json, options);
+                return JsonSerializer.Deserialize<BackupModuleSystem>(json);
             }
             catch (Exception ex)
             {

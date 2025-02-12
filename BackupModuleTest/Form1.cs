@@ -39,6 +39,13 @@ namespace BackupModuleTest
             StartAutoUpdate();
             Console.WriteLine("시작");
             timer.Text = "time : " + DateTime.Now.ToString();
+
+            beiBackupFromPath.EditWidth = 100;
+            beiBackupToPath.EditWidth = 100;
+            beiBackupSettingName.EditWidth = 100;
+            timeEditBackupFromSchedule.EditWidth = 100;
+            timeEditBackupFromWeek.EditWidth = 100;
+            dateEditBackupFromSchedule.EditWidth = 100;
         }
         private void StartAutoUpdate()
         {

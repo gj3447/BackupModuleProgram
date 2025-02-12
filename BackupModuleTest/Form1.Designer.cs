@@ -155,7 +155,7 @@
             ribbonControl1.OptionsMenuMinWidth = 550;
             ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] { ribbonPage1, rpBackupFromInfo, rpBackupToInfo, rpSetting });
             ribbonControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] { repositoryItemTextEdit1, repositoryItemTextEdit2, repositoryItemTextEdit3, repositoryItemTextEdit4, repositoryItemTextEdit5, repositoryItemTextEdit6, repositoryItemCheckEdit1, repositoryItemCheckEdit2, repositoryItemCheckEdit3, repositoryItemCheckEdit4, repositoryItemCheckEdit5, repositoryItemCheckEdit6, repositoryItemCheckEdit7, repositoryItemCheckEdit8, repositoryItemTimeSpanEdit1, repositoryItemTimeEdit1, repositoryItemTimeEdit2, repositoryItemDateEdit1, repositoryItemCheckEdit9, repositoryItemTimeEdit3, repositoryItemTextEdit7 });
-            ribbonControl1.Size = new System.Drawing.Size(1576, 237);
+            ribbonControl1.Size = new System.Drawing.Size(1921, 237);
             // 
             // barButtonItem1
             // 
@@ -731,17 +731,17 @@
             // 
             // lstbBackupFrom
             // 
-            lstbBackupFrom.Location = new System.Drawing.Point(2, 243);
+            lstbBackupFrom.Location = new System.Drawing.Point(0, 243);
             lstbBackupFrom.Name = "lstbBackupFrom";
-            lstbBackupFrom.Size = new System.Drawing.Size(792, 872);
+            lstbBackupFrom.Size = new System.Drawing.Size(1000, 872);
             lstbBackupFrom.TabIndex = 1;
             lstbBackupFrom.SelectedValueChanged += lstbBackupFrom_SelectedValueChanged;
             // 
             // lstbBackupTo
             // 
-            lstbBackupTo.Location = new System.Drawing.Point(800, 243);
+            lstbBackupTo.Location = new System.Drawing.Point(1000, 243);
             lstbBackupTo.Name = "lstbBackupTo";
-            lstbBackupTo.Size = new System.Drawing.Size(775, 872);
+            lstbBackupTo.Size = new System.Drawing.Size(1000, 872);
             lstbBackupTo.TabIndex = 2;
             lstbBackupTo.SelectedValueChanged += lstbBackupTo_SelectedValueChanged;
             // 
@@ -758,7 +758,7 @@
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(1576, 1154);
+            ClientSize = new System.Drawing.Size(2000, 1154);
             Controls.Add(timer);
             Controls.Add(lstbBackupTo);
             Controls.Add(lstbBackupFrom);

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BackupModuleSystem")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b8d2713d6d79d065a8e7c65fc6e4cf7d1329723")]
 [assembly: System.Reflection.AssemblyProductAttribute("BackupModuleSystem")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BackupModuleSystem")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
